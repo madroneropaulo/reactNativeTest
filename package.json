@@ -1,0 +1,36 @@
+{
+  "name": "ReactTest",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "start:ios": "react-native run-ios",
+    "watch": "npm run build -- -w",
+    "rn": "react-native run-android",
+    "tsc": "tsc",
+    "clean": "rimraf _build",
+    "build": "npm run clean && npm run tsc --",
+    "lint": "tslint src/**/*.ts"
+  },
+  "dependencies": {
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.46.4"
+  },
+  "devDependencies": {
+    "@types/jest": "20.0.5",
+    "@types/react": "15.0.39",
+    "@types/react-native": "0.46.7",
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.1.0",
+    "concurrently": "3.5.0",
+    "jest": "20.0.4",
+    "react-native-cli": "2.0.1",
+    "react-test-renderer": "16.0.0-alpha.12",
+    "rimraf": "2.6.1",
+    "typescript": "2.4.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
